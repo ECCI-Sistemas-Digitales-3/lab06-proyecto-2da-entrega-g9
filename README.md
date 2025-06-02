@@ -53,40 +53,26 @@ IV. Conexión
 Raberry pi2w
 
 • GPIO 17 conector Giro
-
 • GPIO 13 Conector PWM
 
 L298N
-
 • Enable conector PWM
-
 • Pin IN1 para sentido de giro de 
 
 motor.
-
 • Entrada 12V
-
 • Tierra
-
 • OUT1 Salida de motor 1
 
 V. Consideración.
 
 • Protección de voltaje con diodos 
-
 para evitar daños en el motor.
-
 • Aislamiento eléctrico para cortos 
-
 eléctricos.
-
 • Una fuente externa para el motor.
-
-• Implementación de una base de 
-
-datos para tener unos parámetros 
-
-de mezcla.
+• Implementación de una base de datos para tener unos parámetros 
+ñ de mezcla.
  
 presenta las imagenes de la configuracion de Node_RED
 ![image](https://github.com/user-attachments/assets/9fc83c6f-8558-40d1-8d62-56b67b5fcf58)
