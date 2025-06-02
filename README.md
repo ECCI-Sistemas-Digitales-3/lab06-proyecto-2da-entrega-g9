@@ -47,6 +47,7 @@ Este proyecto implementa el control de un motor DC para funcionar como mezclador
 - GPIO 13 - PWM (documentación original)  
 - GPIO 18 - PWM (utilizado en el código)  
 - GPIO 23 - Enable (utilizado en el código)
+![17489066010286441083028138637551](https://github.com/user-attachments/assets/27aa61e4-8d23-4efe-9679-46ed9e04cf93)
 
 ### Módulo L298N
 
@@ -55,6 +56,7 @@ Este proyecto implementa el control de un motor DC para funcionar como mezclador
 - Entrada de 12V - Alimentación del motor  
 - GND - Tierra común  
 - OUT1 - Salida al motor
+![17489065624854492721058160867959](https://github.com/user-attachments/assets/5151dda1-6e18-451c-b993-a8c16cf7b943)
 
 ---
 
@@ -149,10 +151,7 @@ El panel de control incluye:
 - Dos botones para activar/desactivar los seguros de operación.
 - Switches conectados a los botones virtuales.
 
-![Flujo Node-RED](ruta/a/la/imagen1.jpg)
-![Panel de Control](ruta/a/la/imagen2.jpg)
 
-> **Nota:** Reemplaza `"ruta/a/la/imagenX.jpg"` con las rutas correctas de las imágenes en tu repositorio de GitHub.
 
 
 Se presenta diagrama correspondiente al programa antes mensionado
