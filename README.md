@@ -124,6 +124,37 @@ presenta las imagenes de la configuracion de Node_RED
 ![image](https://github.com/user-attachments/assets/9fc83c6f-8558-40d1-8d62-56b67b5fcf58)
 ![image](https://github.com/user-attachments/assets/6da6fbbf-53b2-4dd4-a330-0387ad3a42aa)
 
+
+
+
+El sistema de control se ha complementado con una interfaz visual creada en Node-RED, permitiendo la interacción remota a través de una red local o desde una plataforma IoT. La configuración incluye:
+
+### Estructura del Flujo
+
+- **Velocidad del motor**: Controlada mediante un deslizador (`slider`), cuyos valores se publican al tema `motor/speed` mediante un nodo MQTT.
+- **Botón 1 y Botón 2**: Simulados con interruptores (`switches`) que publican valores booleanos (`on` / `off`) a los temas `motor/button1` y `motor/button2`, activando la lógica de seguridad.
+- **Visualización**: Un `gauge` (indicador circular) muestra visualmente el porcentaje de velocidad establecido.
+
+### Temas MQTT utilizados:
+
+- `motor/speed`: recibe el valor de velocidad (0–100%)
+- `motor/button1`: estado de seguridad del botón 1 (true/false)
+- `motor/button2`: estado de seguridad del botón 2 (true/false)
+
+### Interfaz del Panel
+
+El panel de control incluye:
+- Un control deslizante para modificar la velocidad.
+- Un indicador tipo gauge para visualizar el porcentaje actual.
+- Dos botones para activar/desactivar los seguros de operación.
+- Switches conectados a los botones virtuales.
+
+![Flujo Node-RED](ruta/a/la/imagen1.jpg)
+![Panel de Control](ruta/a/la/imagen2.jpg)
+
+> **Nota:** Reemplaza `"ruta/a/la/imagenX.jpg"` con las rutas correctas de las imágenes en tu repositorio de GitHub.
+
+
 Se presenta diagrama correspondiente al programa antes mensionado
 
 ![diagrama_digitals_3 1_page-0001 (1)](https://github.com/user-attachments/assets/b93b491b-d603-4eb0-92cd-b1329c823e8f)
