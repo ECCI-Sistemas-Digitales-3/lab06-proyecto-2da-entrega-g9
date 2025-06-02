@@ -42,9 +42,8 @@ Este proyecto implementa el control de un motor DC para funcionar como mezclador
 ## Conexiones
 
 ### Raspberry Pi
+  
 
-- GPIO 17 - Control de dirección de giro (documentación original)  
-- GPIO 13 - PWM (documentación original)  
 - GPIO 18 - PWM (utilizado en el código)  
 - GPIO 23 - Enable (utilizado en el código)
 ![17489066010286441083028138637551](https://github.com/user-attachments/assets/27aa61e4-8d23-4efe-9679-46ed9e04cf93)
