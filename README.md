@@ -71,7 +71,7 @@ El código emplea el protocolo MQTT para comunicarse con otros dispositivos o pl
 - `motor/speed`: Recibe el valor de velocidad (de 0 a 100) como porcentaje.  
 - `motor/button1` y `motor/button2`: Simulan botones de seguridad. Ambos deben estar en "true" para que el motor se active.
 
-### Lógica de Operación
+### Lógica  de seguridad
 
 El sistema implementa una lógica de doble seguridad: el motor solo se activa si ambos botones virtuales están en estado "true". Esto garantiza que el motor no se active accidentalmente. Si uno de los botones cambia a "false", el motor se desactiva de inmediato.
 
@@ -100,14 +100,6 @@ Cuando el sistema está habilitado, el valor recibido en el tema `motor/speed` s
 - Gracias al uso de MQTT, es posible conectar el sistema con otros dispositivos IoT.  
 - Se puede ampliar el proyecto integrando una base de datos para almacenar parámetros de mezcla.
 
----
-
-## Versiones del Proyecto
-
-| Versión | Fecha       | Ambiente | Observaciones         |
-|--------:|-------------|----------|------------------------|
-| 0.1     | -           | Pruebas  | Versión base           |
-| 1.2     | 15/05/2025  | -        | Versión actual documentada |
 
 ---
 
@@ -126,6 +118,7 @@ El sistema debe permitir:
 
 Este proyecto demuestra cómo implementar un sistema de control de motores seguro y configurable utilizando una Raspberry Pi. Es ideal para aplicaciones de mezcla o cualquier otro proceso que requiera control preciso de motores DC, combinando programación en Python con tecnologías de comunicación como MQTT.
 
+ ## Configuración Node -RED
  
 presenta las imagenes de la configuracion de Node_RED
 ![image](https://github.com/user-attachments/assets/9fc83c6f-8558-40d1-8d62-56b67b5fcf58)
