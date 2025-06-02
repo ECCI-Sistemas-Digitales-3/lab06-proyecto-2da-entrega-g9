@@ -14,82 +14,79 @@ Jonnathan Smith Bueno
  Control de mescaldor  con Raspberry Pi y MQTT
 
 
+I. INTRODUCCION
 
-Este proyecto implementa un controlador de motor DC utilizando una Raspberry Pi, con comunicación inalámbrica mediante el protocolo MQTT. El sistema incorpora un mecanismo de seguridad de doble botón, donde el motor solo se activa si ambos botones virtuales están presionados.
+Diseños e implementación sobre un giro 
+de un motor como mesclador el cual está 
+programada en Python esta 
+implementación esta programada en una 
+Raspebrry pi y como adicional se 
+conecta un modulo L298N para su 
+modulación PWM 
+Designs and implementation on a motor 
+rotation as a mixer which is programmed 
+in Python. This implementation is 
+programmed on a Raspberry Pi and 
+additionally an L298N module is 
+connected for its PWM modulation
+
+II. Objetivos
+
+• Configuración de Raspberry pi 
+para contrarl giro de motor
+• Implementar circuito simple para 
+el giro
+• Programación en Python para 
+velocidad y giro.
+
+III. Materiales.
+
+• Rasberry pi 2w placa a utilizar 
+para nuestro mesclador.
+• Motor DC 
+• Driver L298N 
+• Fuente de alimentación 12V
 
 
-Raspberry Pi (Controlador principal)
-Driver de Motor (Para manejar potencia y dirección)
-Broker MQTT (Middleware para comunicación remota)
-Cliente MQTT (Envía comandos desde otro dispositivo)
+IV. Conexión
 
-Comunicación MQTT
-El sistema se comunica mediante tres tópicos MQTT:
+Raberry pi2w
 
-Tópico	Descripción	Valores aceptados
-motor/speed	Controla la velocidad del motor	0 (apagado) a 100 (máxima velocidad)
-motor/button1	Estado del primer botón de seguridad	"true" (activado) o "false" (desactivado)
-motor/button2	Estado del segundo botón de seguridad	"true" o "false"
+• GPIO 17 conector Giro
 
-Lógica de Control
-1. Habilitación del Motor
-El motor solo se enciende si:
+• GPIO 13 Conector PWM
 
-python
-motor_enabled = (BUTTON1_STATE == True) and (BUTTON2_STATE == True)
-Si cualquiera de los botones se desactiva ("false"), el motor se apaga inmediatamente.
+L298N
 
-2. Control de Velocidad (PWM)
-Si el motor está habilitado, acepta cambios de velocidad mediante motor/speed.
+• Enable conector PWM
 
-Si se desactiva, la velocidad se establece en 0% (frenado suave).
+• Pin IN1 para sentido de giro de 
 
-3. Señal de Enable (ENABLE_PIN)
-Este pin activa/desactiva el driver del motor.
-Solo está en HIGH cuando ambos botones están activos.
+motor.
 
-Diseños e implementación sobre un giro de un motor como mesclador el cual está programada en Python esta implementación esta programada en una Raspebrry pi y como adicional se conecta un modulo L298N para su modulación PWM  
+• Entrada 12V
 
-Designs and implementation on a motor rotation as a mixer which is programmed in Python. This implementation is programmed on a Raspberry Pi and additionally an L298N module is connected for its PWM modulation. 
+• Tierra
 
-Objetivos 
+• OUT1 Salida de motor 1
 
-Configuración de Raspberry pi para contrarl giro de motor 
+V. Consideración.
 
-Implementar circuito simple para el giro 
+• Protección de voltaje con diodos 
 
-Programación en Python para velocidad y giro. 
+para evitar daños en el motor.
 
- 
+• Aislamiento eléctrico para cortos 
 
-Materiales. 
-Rasberry pi 2w  placa a utilizar para nuestro mesclador. 
-Motor DC  
-Driver L298N  
-Fuente de alimentación 12V 
+eléctricos.
 
- 
+• Una fuente externa para el motor.
 
-Conexión 
-Raberry pi2w 
-GPIO 17 conector Giro 
-GPIO 13 Conector PWM 
-L298N 
-Enable conector PWM 
-Pin IN1 para sentido de giro de motor. 
-Entrada 12V 
-Tierra 
-OUT1 Salida de motor 1 
+• Implementación de una base de 
 
- 
+datos para tener unos parámetros 
 
-Consideración. 
-
-Protección de voltaje con diodos para evitar daños en el motor. 
-Aislamiento eléctrico para cortos eléctricos. 
-Una fuente externa para el motor. 
-Implementación de una base de datos para tener unos parámetros de mezcla. 
-
+de mezcla.
  
 presenta las imagenes de la configuracion de Node_RED
 ![image](https://github.com/user-attachments/assets/9fc83c6f-8558-40d1-8d62-56b67b5fcf58)
