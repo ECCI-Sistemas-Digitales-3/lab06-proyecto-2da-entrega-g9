@@ -9,36 +9,10 @@ Jaider Neider Neira
 
 Jonnathan Smith Bueno 
 
-## Documentación
+## Documentación 
 
-                       +------------------------+
-                       |   Raspberry Pi 2W      |
-                       |                        |
-                       |   - MQTT / Node-RED    |
-                       |   - Procesamiento      |
-                       +-----------+------------+
-                                   |
-          +------------------------+------------------------+
-          |                         |                        |
-   +------v-----+           +-------v-----+          +------v------+
-   |  Cámara Pi |           | Sensor Color|          | Raspberry Pi|
-   |    (CSI)   |           |   (I2C/SCL) |          |    Pico     |
-   +------------+           +-------------+          +-------------+
-                                                       |     |     |
-                                                       |     |     |
-                                    +------------------+     |     +-----------------+
-                                    |                        |                       |
-                            +-------v-------+        +-------v--------+       +------v-------+
-                            |  Motor DC 12V |        |  4 Bombas de   |       |  4 Resistencias|
-                            | (PWM + Driver)|        |   Agua (ON/OFF)|       |   Calefactoras |
-                            +---------------+        +----------------+       +----------------+
-                                                      
-              +----------------+----------------+----------------+----------------+
-              |                |                |                |
-      +-------v----+    +------v-----+    +------v-----+    +------v-----+
-      |  Sensor US1|    | Sensor US2 |    | Sensor US3 |    | Sensor US4 |
-      |   HC-SR04  |    |   HC-SR04  |    |   HC-SR04  |    |   HC-SR04  |
-      +------------+    +------------+    +------------+    +------------+
+![17489118037012796522903990294716](https://github.com/user-attachments/assets/4ae76412-9138-46b0-874c-751421ed1639)
+
 
 # Control de Motor Mezclador con Raspberry Pi y L298N
 
