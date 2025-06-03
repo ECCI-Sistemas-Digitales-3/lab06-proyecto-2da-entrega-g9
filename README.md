@@ -11,8 +11,6 @@ Jonnathan Smith Bueno
 
 ## Documentación 
 
-![17489118037012796522903990294716](https://github.com/user-attachments/assets/4ae76412-9138-46b0-874c-751421ed1639)
-
 
 # Control de Motor Mezclador con Raspberry Pi y L298N
 
